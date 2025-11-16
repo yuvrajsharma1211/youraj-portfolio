@@ -1,0 +1,159 @@
+/* --- Begin App.css --- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- End App.css --- */
+
+/* --- Design variables (kept as HSL-compatible custom properties) --- */
+:root {
+  --background: 240 10% 4%;
+  --foreground: 220 20% 92%;
+
+  --card: 240 8% 6%;
+  --card-foreground: 220 20% 92%;
+
+  --popover: 240 8% 6%;
+  --popover-foreground: 220 20% 92%;
+
+  --primary: 250 70% 75%;
+  --primary-foreground: 240 10% 4%;
+
+  --secondary: 260 35% 40%;
+  --secondary-foreground: 220 20% 92%;
+
+  --muted: 240 8% 12%;
+  --muted-foreground: 220 10% 60%;
+
+  --accent: 250 70% 75%;
+  --accent-foreground: 240 10% 4%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 220 20% 92%;
+
+  --border: 240 8% 15%;
+  --input: 240 8% 15%;
+  --ring: 250 70% 75%;
+
+  --radius: 0.5rem;
+  
+  --gradient-primary: linear-gradient(135deg, hsl(250 70% 75%), hsl(260 60% 65%));
+  --gradient-dark: linear-gradient(180deg, hsl(240 10% 4%), hsl(240 10% 6%));
+  --shadow-glow: 0 0 40px hsl(250 70% 75% / 0.3);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sidebar-background: 0 0% 98%;
+
+  --sidebar-foreground: 240 5.3% 26.1%;
+
+  --sidebar-primary: 240 5.9% 10%;
+
+  --sidebar-primary-foreground: 0 0% 98%;
+
+  --sidebar-accent: 240 4.8% 95.9%;
+
+  --sidebar-accent-foreground: 240 5.9% 10%;
+
+  --sidebar-border: 220 13% 91%;
+
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 240 10% 4%;
+  --foreground: 220 20% 92%;
+
+  --card: 240 8% 6%;
+  --card-foreground: 220 20% 92%;
+
+  --popover: 240 8% 6%;
+  --popover-foreground: 220 20% 92%;
+
+  --primary: 250 70% 75%;
+  --primary-foreground: 240 10% 4%;
+
+  --secondary: 260 35% 40%;
+  --secondary-foreground: 220 20% 92%;
+
+  --muted: 240 8% 12%;
+  --muted-foreground: 220 10% 60%;
+
+  --accent: 250 70% 75%;
+  --accent-foreground: 240 10% 4%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 220 20% 92%;
+
+  --border: 240 8% 15%;
+  --input: 240 8% 15%;
+  --ring: 250 70% 75%;
+  --sidebar-background: 240 10% 4%;
+  --sidebar-foreground: 220 20% 92%;
+  --sidebar-primary: 250 70% 75%;
+  --sidebar-primary-foreground: 240 10% 4%;
+  --sidebar-accent: 240 8% 12%;
+  --sidebar-accent-foreground: 220 20% 92%;
+  --sidebar-border: 240 8% 15%;
+  --sidebar-ring: 250 70% 75%;
+}
+
+/* Useful fallback base rules to emulate your original @layer base effects */
+* { box-sizing: border-box; }
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* small sample to show variables in use */
+.card {
+  background: linear-gradient(180deg, hsl(var(--card)), hsl(var(--card)));
+  color: hsl(var(--card-foreground));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-glow);
+}
